@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main-content {
+  background-color: #19162b;
+}
+/* <-------------------Controlls----------------------> */
+.controlls {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0%;
+  top: 50%;
+  padding: 3rem;
+  transform: translateY(-50%);
+}
+
+.control {
+  background-color: gray;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 3px 16px gray;
+}
+.active-btn {
+  background-color: #27ae60;
+  transition: all 0.4s ease-in-out;
+}
