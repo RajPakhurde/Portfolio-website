@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 .main-content {
   background-color: #19162b;
@@ -32,4 +34,107 @@
 .active-btn {
   background-color: #27ae60;
   transition: all 0.4s ease-in-out;
+}
+
+/* <---------------------Section-------------------> */
+.section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+}
+.sec1 {
+}
+.sec2 {
+  background-color: yellow;
+}
+.sec3 {
+  background-color: blueviolet;
+}
+.sec4 {
+  background-color: greenyellow;
+}
+.sec5 {
+  background-color: orange;
+}
+.active {
+  display: block;
+  animation: position 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes position {
+  form {
+    transform: translateY(-100%) scaleY(0);
+  }
+  to {
+    transform: translateY(0%) scaleY(1);
+  }
+}
+/* <-----------------profile photo------------------ > */
+.photo {
+  /* clip-path: circle(50% at 0 50%); */
+  /* background-color: #27ae60; */
+  height: 100vh;
+  width: 39vw;
+  display: flex;
+  align-items: center;
+}
+.profilephoto {
+  position: absolute;
+  left: 6.5%;
+  width: 25vw;
+  padding: 30px 2px;
+  border: 1px solid;
+  border-radius: 6px;
+  background-color: #282323;
+  box-shadow: 3px 3px 10px;
+  filter: grayscale(1);
+  transition: all 0.4s ease-in-out;
+}
+.profilephoto:hover {
+  filter: grayscale(0);
+  cursor: grab;
+}
+
+/* <--------------------Description---------------------> */
+
+.des-res {
+  color: white;
+  width: 30vw;
+}
+.allinfo {
+  display: flex;
+  align-items: center;
+}
+
+.ndr {
+  padding: 16px 0px;
+}
+.fullname {
+  color: #27ae60;
+}
+.down-btn {
+  color: white;
+  border-style: none;
+  border-radius: 17px;
+  background: transparent;
+  border: 1px solid gray;
+  padding-right: 10px;
+  width: fit-content;
+}
+
+.down-btn:hover {
+  cursor: pointer;
+  background-color: #27ae60;
+  transition: all 1s ease-in-out;
+}
+.download-btn {
+  color: white;
+  background-color: #27ae60;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 50%;
 }

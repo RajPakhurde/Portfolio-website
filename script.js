@@ -12,6 +12,10 @@ function pages() {
         ""
       );
       this.className += " active-btn";
+
+      let currentsec = document.querySelectorAll(".active");
+      currentsec[0].className = currentsec[0].className.replace("active", "");
+      sections[i].className += " active";
     });
   }
 }
